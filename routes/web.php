@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use \App\Http\Controllers\PostController;
+use \App\Http\Controllers\FormController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/* Route to a function */
 Route::get('/', function () {
     return view('welcome');
+});
+
+/* Route to a Controller */
+Route::get('/post', [PostController::class, 'index']);
+Route::get('/post/{index}', [PostController::class, 'show']);
+
+/* Route to different routing methods */
+Route::get('/form', [FormController::class, 'index']);
+
+Route::post('/form', function(){
+    echo 'POSTED';
+});
+
+Route::put('/form', function(){
+    echo 'PUTTED';
+});
+
+Route::delete('/form', function(){
+    echo 'DELETED';
 });
