@@ -34,7 +34,8 @@ $ git branch -a
 $ git  checkout branch-name
 
 ## To checkout to a remote branch
-$ git checkout -t remote/something/branch
+
+$ git checkout remote/something/branch
 
 ## Note
 To following along; checkout each branch respective to your slides.
