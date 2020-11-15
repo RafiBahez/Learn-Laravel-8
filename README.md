@@ -16,7 +16,7 @@ $ npm install
 $ npm run dev
 
 ## Create .env file
-$ cp .evn.example .env
+$ cp .env.example .env
 
 ## Generate an app encryption key
 $ php artisan key:generate
@@ -38,4 +38,4 @@ $ git  checkout branch-name
 $ git checkout remote/something/branch
 
 ## Note
-To following along; checkout each branch respective to your slides.
+To see each day example, use (checkout) the branch!
