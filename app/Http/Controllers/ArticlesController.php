@@ -42,7 +42,7 @@ class ArticlesController extends Controller
         $article->title = $request->title;
         $article->content = $request->content;
         $article->created_at = Carbon::now();
-        $article->created_at = Carbon::now();
+        $article->updated_at = Carbon::now();
         $article->save();
         return redirect()->route('articles.index');
     }
